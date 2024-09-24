@@ -6,6 +6,7 @@
   --color-secondary: #fbbf24;
   --container-box-shadow: 2px 2px 4px rgba(161, 161, 170, 0.3);
   --gap: 1.5rem;
+  --color-text-lighter: rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -140,7 +141,13 @@ li svg {
   align-items: center;
 }
 
-.welcome-text {
+.trending-profile {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-text,
+.trending-text {
   display: flex;
   flex-direction: column;
   margin-left: 12px;
@@ -217,6 +224,7 @@ li svg {
   padding: 27px;
   border-left: 8px solid var(--color-secondary);
   box-shadow: var(--container-box-shadow);
+  border-radius: 12px;
 }
 
 .card-button {
@@ -232,10 +240,11 @@ li svg {
 
 .card p {
   font-weight: 300;
+  color: var(--color-text-lighter);
 }
 
 .card h3 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .right-sidebar {
@@ -247,24 +256,56 @@ li svg {
   display: grid;
   grid-template-rows: auto 1fr;
   box-shadow: var(--container-box-shadow);
+  margin-bottom: 50px;
 }
 
 .announment-card {
   background-color: white;
-  padding: 10px 27px;
+  border-radius: 12px;
+  padding: 25px 40px;
 }
 
 .announment-card h3 {
-  padding: 0px 0px;
+  padding-top: 8px;
   margin: 0;
+  font-weight: 400;
 }
 
 .announment-card p {
-  padding: 10px 0px;
+  color: var(--color-text-lighter);
+  font-size: 12px;
+  padding-top: 6px;
   margin: 0;
   font-weight: 300;
+  padding-bottom: 10px;
 }
 
-.first {
-  padding-top: 35px;
+.trending {
+  display: grid;
+  background-color: white;
+  grid-template-rows: auto 1fr;
+  box-shadow: var(--container-box-shadow);
+  padding: 20px 25px;
+  gap: 18px;
+  border-radius: 12px;
+}
+
+.trending-text h3 {
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.trending-text p {
+  margin: 0;
+  color: var(--color-text-lighter);
+}
+
+.right-sidebar h3 {
+  font-weight: 500;
+}
+
+.left-sidebar h3 {
+  font-weight: 500;
 }
